@@ -1,0 +1,413 @@
+    1  cd u01
+    2  cd /u01
+    3  ./app/oracle/product/12.1.0.2/db_1/bin/lsnrctl
+    4  ./app/oracle/product/12.1.0.2/db_1/bin/lsnrctl start
+    5  ll
+    6  cd app/
+    7  ll
+    8  find . -name sqlplus
+    9  ./oracle/product/12.1.0.2/db_1/bin/sqlplus
+   10  ./oracle/product/12.1.0.2/db_1/bin/sqlplus / as sysdba
+   11  ./oracle/product/12.1.0.2/db_1/bin/sqlplus / as ec2-user
+   12  cd /oracle/product/12.1.0.2/db_1/bin/sqlplus
+   13  cd /oracle/product/12.1.0.2/db_1/bin/
+   14  ll
+   15  cd /oracle/product/12.1.0.2/db_1/bin
+   16  find . -name sqlplus
+   17  cd /oracle/product/12.1.0.2/db_1/bin
+   18  ll /oracle/product/12.1.0.2/db_1/bin
+   19  ll /oracle/product/12.1.0.2/db_1
+   20  ll /u01
+   21  ll /u01/app/oracle/product/12.1.0.2/db_1/
+   22  ll /u01/app/oracle/product/12.1.0.2/db_1/bin
+   23  cd /u01/app/oracle/product/12.1.0.2/db_1/bin
+   24  ll
+   25  sqlplus
+   26  cd cd $ORACLE_HOME/bin
+   27   cd $ORACLE_HOME/bin
+   28  exit
+   29  su - oracle
+   30  ll
+   31  whoami
+   32  cd /u01/app/oracle/product/12.1.0.2/db_1/
+   33  cd bin
+   34  l
+   35  ll
+   36  id oralce
+   37  id oracle
+   38  chown -R oracle:oracle /u01
+   39  sudo su 
+   40  sudo su - root
+   41  exit
+   42  pwd
+   43  cd /u01/app/oracle/product/12.1.0.2/db_1/bin/
+   44  ll
+   45  sqlplus
+   46  relink all
+   47  less /u01/app/oracle/product/12.1.0.2/db_1/install/relink.log
+   48  cp  $ORACLE_HOME/javavm/jdk/jdk6/lib/libjavavm12.a $ORACLE_HOME/lib/
+   49  cd $ORACLE_HOME/javavm
+   50  cd jdk/jdk8/lib/
+   51  ll
+   52  cp libjavavm12.a $ORACLE_HOME/lib/
+   53  pwd
+   54  cd ../../../../
+   55  ll
+   56  sqlplus
+   57  cd /u01
+   58  find . -name lsnrctl 
+   59  ./app/oracle/product/12.1.0.2/db_1/bin/lsnrctl stop
+   60  sudo su
+   61  exit
+   62  pwd
+   63  cd /u01/app/oracle/product/12.1.0.2/db_1/
+   64  ll
+   65  sqlplus
+   66  ll
+   67  relink all
+   68  cd /u01/app/oracle/product/12.1.0.2/db_1/
+   69  cd bin
+   70  sqlplus 
+   71  unsetenv EXTSHM
+   72  sudo su
+   73  exit
+   74  lsnrctl
+   75  cd /u01/app/oracle/product/12.1.0.2/db_1/
+   76  cd bin
+   77  ll
+   78  sqlplus 
+   79  ll oracle
+   80  chmod -R 655 oracle
+   81  ll oracle
+   82  sqlplus
+   83  chmod 6755 oracle
+   84  ll oracle
+   85  sqlplus
+   86  sudo su 
+   87  exit
+   88  lsnrctl
+   89  less /u01/app/oracle/product/12.1.0.2/db_1/network/admin/listener.ora
+   90  sqlplus sys as sysdba/Oracle@123@ol7.localdomain/LISTENER
+   91  ping ol7.localdomain
+   92  sqlplus sys as sysdba/Oracle@123@127.0.0.1/LISTENER
+   93  cd $ORACLE_HOME/bin
+   94  ll
+   95  ll oracle
+   96  #$ORACLE_HOME/root.sh
+   97  sudo su 
+   98  exit
+   99  ll
+  100  lsnrctl
+  101  ll
+  102  cd /u01/app/oracle/product/12.1.0.2/db_1/
+  103  cd bin
+  104  sqlplus 
+  105  relink all
+  106  less /u01/app/oracle/product/12.1.0.2/db_1/install/relink.log
+  107  ll  /usr/ccs/bin
+  108  ll  /usr/sbin
+  109  ll
+  110  echo $ORACLE_HOME
+  111  chmod 6751 $ORACLE_HOME/bin/*
+  112  ll /u01/app/oracle/product/12.1.0.2/db_1/bin/extjob
+  113  exit
+  114  chmod 6751 $ORACLE_HOME/bin/*
+  115  sqlplus / as sysdba
+  116  $ORACLE_HOME/bin/relink all
+  117  less /u01/app/oracle/product/12.1.0.2/db_1/install/relink.log
+  118  less /u01/app/oraInventory/logs/installActions2019-09-30_04-36-26PM.log
+  119  oraenv
+  120  sh -x /usr/local/bin/oraenv
+  121  cd $ORACLE_HOME
+  122  ll
+  123  find . -name orabasetab
+  124  less ./install/orabasetab
+  125  vi ./install/orabasetab
+  126  echo $ORACLE_SID
+  127  netstat -a | grep LISTEN | grep 1521
+  128  cd $ORACLE_HOME/network/admin
+  129  mv listener.ora listener.20090722.ora
+  130  lsnrctl start
+  131  lsnrctl stop
+  132  lsnrctl start
+  133  cat /etc/hosts
+  134  exit
+  135  vi /etc/hosts
+  136  cat /etc/hosts
+  137  su -
+  138  exit
+  139  lsnrctl 
+  140  cat /etc/hosts
+  141  sudo su - root
+  142  exit
+  143  ll
+  144  lsnrctl 
+  145  ll
+  146  sqlplus
+  147  sqlplus 'sys as sysdba/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1)))'
+  148  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1)))' / as sysdba
+  149  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1))) / as sysdba'
+  150  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1)))'
+  151  lsnrctl status
+  152  lsnrctl stop
+  153  sqlplus
+  154  lsnrctl stop
+  155  lsnrctl start
+  156  mv listener.20090722.ora listener.ora
+  157  cd $ORACLE_HOME/bin
+  158  mv listener.20090722.ora listener.ora
+  159  ll listener*
+  160  ll
+  161  cd ..
+  162  ll
+  163  find . -name listener*
+  164  mv ./network/admin/listener.20090722.ora ./network/admin/listener.ora
+  165  lsnrctl start
+  166  lsnrctl status
+  167  cat /u01/app/oracle/product/12.1.0.2/db_1/network/admin/listener.ora
+  168  cat /etc/hosts
+  169  sqlplus
+  170  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1)))'
+  171  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=172.31.0.69)(Port=1521))(CONNECT_DATA=(SID=cdb1)))'
+  172  history
+  173  history >/home/ec2-user/history_3009.log
+  174  exit
+  175  history >/home/oracle/history.log
+  176  exit
+  177  relink all
+  178  less /u01/app/oracle/product/12.1.0.2/db_1/install/relink.log
+  179  pwd
+  180  cd $ORACLE_HOME/bin
+  181  ll relink
+  182  relink all
+  183  relink status
+  184  relink all
+  185  cat /u01/app/oracle/product/12.1.0.2/db_1/install/relink.log
+  186  grep -i err $ORACLE_HOME/install/relink.log
+  187  dbstart $ORACLE_HOME
+  188  cat /u01/app/oracle/product/12.1.0.2/db_1/startup.log
+  189  ll /u01/app/oracle/product/12.1.0.2/db_1/bin/dbstart
+  190  echo $ORACLE_SID
+  191  chmod 750 /etc/init.d/dbora
+  192  chmod 750 /etc/init.d
+  193  exit
+  194  vi `which dbstart`
+  195  /u01/app/oracle/product/12.1.0.2/db_1/bin/dbstart
+  196  tail -f /u01/app/oracle/product/12.1.0.2/db_1/startup.log
+  197  exit
+  198  ps -ef | grep tnslsnr
+  199  $ORACLE_HOME/bin/lsnrctl stop LISTENER
+  200  $ORACLE_HOME/bin/lsnrctl start LISTENER
+  201  SQLPLUS / AS SYSDBA
+  202  sqlplys / as sysdba
+  203  sqlplus / as sysdba
+  204  chown -R oracle.oinstall /u01
+  205  su - root
+  206  exit
+  207  cd /u01/software/database
+  208  cd /home/
+  209  cd ec2-user/
+  210  ll
+  211  cd oracle/
+  212  ll
+  213  exit
+  214  dbca -silent -createDatabase   -templateName General_Purpose.dbc   -gdbname cdb1 -sid cdb1 -responseFile NO_VALUE   -characterSet AL32UTF8   -sysPassword OraPasswd1   -systemPassword OraPasswd1   -createAsContainerDatabase true   -numberOfPDBs 1   -pdbName pdb1   -pdbAdminPassword OraPasswd1   -databaseType MULTIPURPOSE   -automaticMemoryManagement false   -storageType FS   -ignorePreReqs
+  215  dbca 
+  216  ll
+  217  cd $ORACLE_HOME
+  218  ll
+  219  rm -rf *
+  220  cd $ORACLE_BASE
+  221  ll
+  222  rm -rf *
+  223  ll
+  224  rm /etc/oratab /etc/emtab
+  225  ll
+  226  . /usr/local/bin/oraenv
+  227  ll
+  228  pwd
+  229  rm -rf /u01
+  230  ll
+  231  cd /u01
+  232  ll
+  233  cd app/oracle/
+  234  ll
+  235  exit
+  236  cd /home/
+  237  cd ec2-user/
+  238  ll
+  239  exit
+  240  echo $ORACLE_HOME
+  241  cd $ORACLE_HOME
+  242  ll
+  243  cd javavm
+  244  ll
+  245  cd jdk
+  246  ll
+  247  cd jdk8
+  248  ll
+  249  cd lib
+  250  ll
+  251  cp libjavavm12.a $ORACLE_HOME/lib
+  252  less /u01/app/oraInventory/logs/installActions2019-09-30_05-37-40PM.log
+  253  ll $ORACLE_HOME/lib/libjavavm12.a
+  254  pwd
+  255  ln -s libjavavm12.a /u01/app/oracle/product/12.1.0.2/db_1/lib/
+  256  rm -r /u01/app/oracle/product/12.1.0.2/db_1/lib/
+  257  ll /u01/app/oracle/product/12.1.0.2/db_1/lib/
+  258  ln -s libjavavm12.a /u01/app/oracle/product/12.1.0.2/db_1/lib/
+  259  pwd
+  260  cd /home/ec2-user/
+  261  ll
+  262  cd Installs/
+  263  ll
+  264  cd database/
+  265  ./runInstaller 
+  266  pwd
+  267  ll
+  268  cd ..
+  269  ll
+  270  cd ec2-user/
+  271  ll
+  272  cd Installs/
+  273  ll
+  274  cd database/
+  275  ll
+  276  ./runInstaller 
+  277  DISPLAY=192.168.1.128:0.0; export DISPLAY
+  278  ./runInstaller 
+  279  clear
+  280  ifconfig
+  281  history | grep DISPLAY
+  282  DISPLAY=172.31.0.69:0.0; export DISPLAY
+  283  echo $DISPLAY
+  284  xclock
+  285  sudo su - 
+  286  exit
+  287  cd /home/
+  288  ll
+  289  cd ec2-user/
+  290  ll
+  291  cd Installs/
+  292  ll
+  293  cd database/
+  294  LL
+  295  LS -LRT
+  296  ls 
+  297  ./runInstaller 
+  298  DISPLAY=192.168.1.128:0.0; export DISPLAY
+  299  echho $DISPLAY
+  300  echo $DISPLAY
+  301  ./runInstaller 
+  302  xclock
+  303  export DISPLAY='127.0.0.1:0.0'
+  304  echo $DISPLAY
+  305  xclock &
+  306  export DISPLAY='127.0.0.1:10.0'
+  307  echo $DISPLAY
+  308  xclock &
+  309  ./runInstaller 
+  310  ifconfig
+  311  echo DISPLAY='172.31.0.69:0.0'
+  312  echo $DISPLAY
+  313  export DISPLAY='172.31.0.69:0.0'
+  314  echo $DISPLAY
+  315  xclock &
+  316  ./runInstaller 
+  317  clear
+  318  export DISPLAY=localhost:1.0
+  319  xclock &
+  320  export DISPLAY=
+  321  echo $DISPLAY
+  322  xclock &
+  323  clear
+  324  export DISPLAY=:0.0;
+  325  echo $DISPLAY
+  326  xclock&
+  327  xclockç&
+  328  xclock  &
+  329  exit
+  330  pwd
+  331  cd /home/ec2-user
+  332  cd Installs/
+  333  ls
+  334  cd database/
+  335  ls
+  336  ./runInstaller 
+  337  export DISPLAY=192.168.1.128:0.0;
+  338  echo $DISPLAY
+  339  xterm
+  340  /usr/x11R6/bin/xclock &
+  341  exit
+  342  xclock &
+  343  ifconfig
+  344  pwd
+  345  cd ../ec2-user/Installs/database/
+  346  ll
+  347  ./runInstaller 
+  348  DISPLAY=192.168.1.128:0.0; export DISPLAY
+  349  echo $DISPLAY
+  350  xclock &
+  351  ls 
+  352  ./runInstaller 
+  353  xclock &
+  354  jobs
+  355  ps -eaf| grep install
+  356  ls
+  357  ifconfig
+  358  DISPLAY=172.31.0.69:0.0; export DISPLAY
+  359  echo $DISPLAY
+  360  xclock &
+  361  ls -lrt
+  362  pwd
+  363  cd ../ec2-user/Installs/database/
+  364  ls 
+  365  ./runInstaller 
+  366  '
+  367  cd /u01
+  368  ls
+  369  cd app/
+  370  ll
+  371  cd oracle
+  372  ll
+  373  find . -name oui
+  374  cd product/12.1.0.2/db_1/oui
+  375  ls -lrt
+  376  cd bin
+  377  ls
+  378  clear
+  379  ls
+  380  pwd
+  381  ls
+  382  git
+  383  ls
+  384  pwd
+  385  cd ~/
+  386  ls
+  387  pwd
+  388  cd ..
+  389  ls
+  390  cd oracle/
+  391  ls
+  392  vi ö/etc/oratab
+  393  vi /etc/oratab
+  394  su 
+  395  exit
+  396  clear
+  397  pwd
+  398  cd ../ec2-user/Installs/
+  399  LS
+  400  cd database/
+  401  ls
+  402  ./runInstaller 
+  403  ls
+  404  cd ..
+  405  ls
+  406  rm -rf fmw_12.2.1.4.0_oid_linux64.bin 
+  407  exit
+  408  ls
+  409  cd /home/ec2-user/Installs/database/
+  410  ls
+  411  ./runInstaller 
+  412  pwd
+  413  history > /home/oracle/history_1.log

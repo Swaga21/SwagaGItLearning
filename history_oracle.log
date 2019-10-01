@@ -1,0 +1,175 @@
+    1  cd u01
+    2  cd /u01
+    3  ./app/oracle/product/12.1.0.2/db_1/bin/lsnrctl
+    4  ./app/oracle/product/12.1.0.2/db_1/bin/lsnrctl start
+    5  ll
+    6  cd app/
+    7  ll
+    8  find . -name sqlplus
+    9  ./oracle/product/12.1.0.2/db_1/bin/sqlplus
+   10  ./oracle/product/12.1.0.2/db_1/bin/sqlplus / as sysdba
+   11  ./oracle/product/12.1.0.2/db_1/bin/sqlplus / as ec2-user
+   12  cd /oracle/product/12.1.0.2/db_1/bin/sqlplus
+   13  cd /oracle/product/12.1.0.2/db_1/bin/
+   14  ll
+   15  cd /oracle/product/12.1.0.2/db_1/bin
+   16  find . -name sqlplus
+   17  cd /oracle/product/12.1.0.2/db_1/bin
+   18  ll /oracle/product/12.1.0.2/db_1/bin
+   19  ll /oracle/product/12.1.0.2/db_1
+   20  ll /u01
+   21  ll /u01/app/oracle/product/12.1.0.2/db_1/
+   22  ll /u01/app/oracle/product/12.1.0.2/db_1/bin
+   23  cd /u01/app/oracle/product/12.1.0.2/db_1/bin
+   24  ll
+   25  sqlplus
+   26  cd cd $ORACLE_HOME/bin
+   27   cd $ORACLE_HOME/bin
+   28  exit
+   29  su - oracle
+   30  ll
+   31  whoami
+   32  cd /u01/app/oracle/product/12.1.0.2/db_1/
+   33  cd bin
+   34  l
+   35  ll
+   36  id oralce
+   37  id oracle
+   38  chown -R oracle:oracle /u01
+   39  sudo su 
+   40  sudo su - root
+   41  exit
+   42  pwd
+   43  cd /u01/app/oracle/product/12.1.0.2/db_1/bin/
+   44  ll
+   45  sqlplus
+   46  relink all
+   47  less /u01/app/oracle/product/12.1.0.2/db_1/install/relink.log
+   48  cp  $ORACLE_HOME/javavm/jdk/jdk6/lib/libjavavm12.a $ORACLE_HOME/lib/
+   49  cd $ORACLE_HOME/javavm
+   50  cd jdk/jdk8/lib/
+   51  ll
+   52  cp libjavavm12.a $ORACLE_HOME/lib/
+   53  pwd
+   54  cd ../../../../
+   55  ll
+   56  sqlplus
+   57  cd /u01
+   58  find . -name lsnrctl 
+   59  ./app/oracle/product/12.1.0.2/db_1/bin/lsnrctl stop
+   60  sudo su
+   61  exit
+   62  pwd
+   63  cd /u01/app/oracle/product/12.1.0.2/db_1/
+   64  ll
+   65  sqlplus
+   66  ll
+   67  relink all
+   68  cd /u01/app/oracle/product/12.1.0.2/db_1/
+   69  cd bin
+   70  sqlplus 
+   71  unsetenv EXTSHM
+   72  sudo su
+   73  exit
+   74  lsnrctl
+   75  cd /u01/app/oracle/product/12.1.0.2/db_1/
+   76  cd bin
+   77  ll
+   78  sqlplus 
+   79  ll oracle
+   80  chmod -R 655 oracle
+   81  ll oracle
+   82  sqlplus
+   83  chmod 6755 oracle
+   84  ll oracle
+   85  sqlplus
+   86  sudo su 
+   87  exit
+   88  lsnrctl
+   89  less /u01/app/oracle/product/12.1.0.2/db_1/network/admin/listener.ora
+   90  sqlplus sys as sysdba/Oracle@123@ol7.localdomain/LISTENER
+   91  ping ol7.localdomain
+   92  sqlplus sys as sysdba/Oracle@123@127.0.0.1/LISTENER
+   93  cd $ORACLE_HOME/bin
+   94  ll
+   95  ll oracle
+   96  #$ORACLE_HOME/root.sh
+   97  sudo su 
+   98  exit
+   99  ll
+  100  lsnrctl
+  101  ll
+  102  cd /u01/app/oracle/product/12.1.0.2/db_1/
+  103  cd bin
+  104  sqlplus 
+  105  relink all
+  106  less /u01/app/oracle/product/12.1.0.2/db_1/install/relink.log
+  107  ll  /usr/ccs/bin
+  108  ll  /usr/sbin
+  109  ll
+  110  echo $ORACLE_HOME
+  111  chmod 6751 $ORACLE_HOME/bin/*
+  112  ll /u01/app/oracle/product/12.1.0.2/db_1/bin/extjob
+  113  exit
+  114  chmod 6751 $ORACLE_HOME/bin/*
+  115  sqlplus / as sysdba
+  116  $ORACLE_HOME/bin/relink all
+  117  less /u01/app/oracle/product/12.1.0.2/db_1/install/relink.log
+  118  less /u01/app/oraInventory/logs/installActions2019-09-30_04-36-26PM.log
+  119  oraenv
+  120  sh -x /usr/local/bin/oraenv
+  121  cd $ORACLE_HOME
+  122  ll
+  123  find . -name orabasetab
+  124  less ./install/orabasetab
+  125  vi ./install/orabasetab
+  126  echo $ORACLE_SID
+  127  netstat -a | grep LISTEN | grep 1521
+  128  cd $ORACLE_HOME/network/admin
+  129  mv listener.ora listener.20090722.ora
+  130  lsnrctl start
+  131  lsnrctl stop
+  132  lsnrctl start
+  133  cat /etc/hosts
+  134  exit
+  135  vi /etc/hosts
+  136  cat /etc/hosts
+  137  su -
+  138  exit
+  139  lsnrctl 
+  140  cat /etc/hosts
+  141  sudo su - root
+  142  exit
+  143  ll
+  144  lsnrctl 
+  145  ll
+  146  sqlplus
+  147  sqlplus 'sys as sysdba/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1)))'
+  148  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1)))' / as sysdba
+  149  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1))) / as sysdba'
+  150  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1)))'
+  151  lsnrctl status
+  152  lsnrctl stop
+  153  sqlplus
+  154  lsnrctl stop
+  155  lsnrctl start
+  156  mv listener.20090722.ora listener.ora
+  157  cd $ORACLE_HOME/bin
+  158  mv listener.20090722.ora listener.ora
+  159  ll listener*
+  160  ll
+  161  cd ..
+  162  ll
+  163  find . -name listener*
+  164  mv ./network/admin/listener.20090722.ora ./network/admin/listener.ora
+  165  lsnrctl start
+  166  lsnrctl status
+  167  cat /u01/app/oracle/product/12.1.0.2/db_1/network/admin/listener.ora
+  168  cat /etc/hosts
+  169  sqlplus
+  170  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=ol7.localdomain)(Port=1521))(CONNECT_DATA=(SID=cdb1)))'
+  171  sqlplus 'sys/Oracle123@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=172.31.0.69)(Port=1521))(CONNECT_DATA=(SID=cdb1)))'
+  172  history
+  173  history >/home/ec2-user/history_3009.log
+  174  exit
+  175  history >/home/oracle/history.log
