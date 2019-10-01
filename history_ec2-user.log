@@ -1,0 +1,224 @@
+    1  ll
+    2  df -kh
+    3  pwd
+    4  mkdir Installs
+    5  cd Installs/
+    6  ls -lrt
+    7  clear
+    8  ls
+    9  ls -ltr
+   10  tar -xvf jdk-8u221-linux-x64.tar.gz 
+   11  ll
+   12  rm -r jdk-8u221-linux-x64.tar.gz 
+   13  ls -lrt
+   14  locate bash_profile
+   15  locate. bash_profile
+   16  locate .bash_profile
+   17  locate ./bash_profile
+   18  cd ..
+   19  ll
+   20  cd ..
+   21  ll
+   22  ls -lart
+   23  cd ec2-user/
+   24  ls -lart
+   25  vi .bash_profile 
+   26  ll
+   27  ll Installs/jdk1.8.0_221/
+   28  cd Installs/jdk1.8.0_221/
+   29  pwd
+   30  cd -
+   31  vi .bash_profile 
+   32  ~/.bash_profile
+   33  sudo su ~/.bash_profile
+   34  pwd
+   35  source ~/.bash_profile
+   36  xclock
+   37  uname -a
+   38  uname
+   39  sudo yum install -y gcc-c++
+   40  sudo yum install -y libX11-devel
+   41  sudo yum install -y fontconfig-devel
+   42  sudo yum install -y libXcursor-devel
+   43  sudo yum install -y libXext-devel
+   44  sudo yum install -y libXfixes
+   45  sudo yum install -y libXft-devel
+   46  sudo yum install -y libXi-devel
+   47  sudo yum install -y libXrandr-devel
+   48  sudo yum install -y libXrender-devel
+   49  xclocl
+   50  xclock
+   51  ./home/ec2-user/Installs/database/runInstaller
+   52  cd /home/ec2-user/Installs/database/runInstaller
+   53  cd /home/ec2-user/Installs/database/
+   54  ll
+   55  ./runInstaller 
+   56  DISPLAY=192.168.1.128:0.0; export DISPLAY
+   57  echo $SHELL
+   58  echo $DISPLAY
+   59  xclock
+   60  ./runInstaller 
+   61  jobs
+   62  ps -eaf| grep java
+   63  /usr/bin/xdpyinfo
+   64  ll
+   65  sudo su 
+   66  ./runInstaller 
+   67  xclock &
+   68  cd /home/ec2-user/
+   69  cd Installs/
+   70  ll
+   71  cd database/
+   72  ll
+   73  ./runInstaller 
+   74  sudo su
+   75  ll
+   76  pwd
+   77  ll ../jdk1.8.0_221/jre/lib/
+   78  ll ../jdk1.8.0_221/jre/lib/amd64/libawt_xawt.so
+   79  vi ~/.bash_profile
+   80  which jre
+   81  vi ~/.bash_profile
+   82  source ~/.bash_profile
+   83  which jre
+   84  ./runInstaller 
+   85  ll /tmp/OraInstall2019-09-30_03-08-21PM
+   86  rm -rf /tmp/OraInstall2019-09-30_03-08-21PM
+   87  vi ~/.bash_profile
+   88  sudo su 
+   89  ll
+   90  ./runInstaller 
+   91  vi ~/.bash_profile
+   92  source ~/.bash_profile
+   93  ./runInstaller 
+   94  ll
+   95  java -version
+   96  ll /etc/profile
+   97  vi ~/.bash_profile
+   98  vi /etc/profile
+   99  sudo su 
+  100  source /etc/profile
+  101  ./runi
+  102  ./runInstaller 
+  103  JAVA_HOME=/home/ec2-user/Installs/jdk1.8.0_221
+  104  JRE_HOME=/home/ec2-user/Installs/jdk1.8.0_221/jre
+  105  export TMP=/tmp
+  106  export TMPDIR=$TMP
+  107  export ORACLE_HOSTNAME=ol7.localdomain
+  108  export ORACLE_UNQNAME=cdb1
+  109  export ORACLE_BASE=/u01/app/oracle
+  110  export ORACLE_HOME=$ORACLE_BASE/product/12.1.0.2/db_1
+  111  export ORACLE_SID=cdb1
+  112  PATH=$PATH:$HOME/.local/bin:$HOME/bin:$JAVA_HOME/bin:$ORACLE_HOME/bin:/usr/sbin:$JRE_HOME/bin
+  113  export LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib
+  114  export CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib
+  115  export JAVA_HOME
+  116  export JRE_HOME
+  117  export PATH
+  118  ./runInstaller 
+  119  https://gaindbainfo.blogspot.com/2017/02/jdkjrelibi386xawtlibmawtso-libxextso6.html
+  120  rpm -ivh openmotif21-2.1.30-11.EL6.i686.rpm --force  --nodeps
+  121  rpm -ivh xorg-x11-libs-6.8.2-1.EL.33.0.1.WB1.i386.rpm --force  --nodeps
+  122  rpm -ivh binutils-2.20.51.0.2-5.11.el6.i686.rpm --force  --nodeps
+  123  rpm -ivh binutils-2.20.51.0.2-5.11.el6.x86_64.rpm --force  --nodeps
+  124  rpm -ivh gcc-4.4.4-13.el6.x86_64.rpm --force  --nodeps
+  125  rpm -ivh gcc-4.4.5-6.el6.x86_64.rpm --force  --nodeps
+  126  rpm -ivh gcc-c++-4.4.4-13.el6.x86_64.rpm --force  --nodeps
+  127  rpm -ivh glibc-2.12-1.7.el6_0.5.i686.rpm --force  --nodeps
+  128  rpm -ivh glibc-2.12-1.7.el6.x86_64.rpm --force  --nodeps
+  129  rpm -ivh glibc-common-2.12-1.7.el6.x86_64.rpm --force  --nodeps
+  130  rpm -ivh glibc-devel-2.12-1.7.el6.i686.rpm --force  --nodeps
+  131  rpm -ivh glibc-devel-2.12-1.7.el6.x86_64.rpm --force  --nodeps
+  132  rpm -ivh libgcc-4.4.4-13.el6.i686.rpm --force  --nodeps
+  133  rpm -ivh libgcc-4.4.4-13.el6.x86_64.rpm --force  --nodeps
+  134  rpm -ivh libstdc++-devel-4.4.4-13.el6.i686.rpm --force  --nodeps
+  135  rpm -ivh libstdc++-devel-4.4.4-13.el6.x86_64.rpm --force  --nodeps
+  136  rpm -ivh libstdc++-4.4.4-13.el6.i686.rpm --force  --nodeps
+  137  rpm -ivh libstdc++-4.4.4-13.el6.x86_64.rpm --force  --nodeps
+  138  rpm -ivh make-3.81-19.el6.x86_64.rpm --force  --nodeps
+  139  rpm -ivh libXrender-0.9.5-1.el6.i686.rpm --force  --nodeps
+  140  rpm -ivh libXp-1.0.0-15.1.el6.x86_64.rpm --force  --nodeps
+  141  rpm -ivh libaio-0.3.107-10.el6.i686.rpm --force  --nodeps
+  142  rpm -ivh libaio-0.3.107-10.el6.x86_64.rpm --force  --nodeps
+  143  rpm -ivh libgomp-4.4.4-13.el6.x86_64.rpm --force  --nodeps
+  144  rpm -ivh sysstat-9.0.4-11.el6.x86_64.rpm --force  --nodeps
+  145  rpm -ivh util-linux-ng-2.17.2-6.el6.x86_64.rpm --force  --nodeps
+  146  rpm -ivh unzip-5.51-10.el5.src.rpm --force  --nodeps
+  147  rpm -ivh compat-libstdc++-33-3.2.3-69.el6.i686.rpm --force  --nodeps
+  148  rpm -ivh compat-libstdc++-296-2.96-144.el6.i686.rpm --force  --nodeps
+  149  rpm -ivh compat-libstdc++-33-3.2.3-69.el6.x86_64.rpm --force  --nodeps
+  150  rpm -ivh elfutils-libelf-0.148-1.el6.x86_64.rpm --force  --nodeps
+  151  rpm -ivh kernel-uek-2.6.39-400.17.1.el6uek.x86_64.rpm --force  --nodeps
+  152  rpm -ivh libaio-0.3.107-10.el6.x86_64.rpm --force  --nodeps
+  153  rpm -ivh unixODBC-2.2.14-11.el6.i686.rpm --force  --nodeps
+  154  rpm -ivh unixODBC-2.2.14-11.el6.x86_64.rpm --force  --nodeps
+  155  rpm -ivh unixODBC-devel-2.2.14-11.el6.i686.rpm --force  --nodeps
+  156  rpm -ivh unixODBC-devel-2.2.14-11.el6.x86_64.rpm --force  --nodeps
+  157  rpm -ivh openmotif21-2.1.30-11.EL6.i686.rpm --force  --nodeps
+  158  ls
+  159  cd rpm
+  160  ll
+  161  rpm -ivh cvuqdisk-1.0.10-1.rpm --force --nodeps
+  162  sudo su 
+  163  cd ..
+  164  ll
+  165  ./runInstaller 
+  166  sudo su 
+  167  cd /u01
+  168  cd app/oracle/product/12.1.0.2/db_1/
+  169  cd bin
+  170  ll
+  171  sqlplus
+  172  sudo su - oracle
+  173  sudo su 
+  174  ll
+  175  pwd
+  176  ll
+  177  su - oralce
+  178  su - oracle
+  179  ./u01/app/oracle/product/12.1.0.2/db_1/bin/lsnrctl stop
+  180  ll /u01/app/oracle/product/12.1.0.2/db_1/bin/lsnrctl 
+  181  lsnrctl
+  182  sudo su 
+  183  ll
+  184  sqlplus
+  185  ll
+  186  sqlplus
+  187  ll
+  188  pwd
+  189  sudo su - oracle
+  190  ll
+  191  cd /u01
+  192  ll
+  193  cd app/oracle/product/12.1.0.2/db_1/
+  194  ll
+  195  cd bin
+  196  ll
+  197  sqlplus
+  198  su - oracle
+  199  su - 
+  200  sudo su
+  201  lsnrctl
+  202  less /u01/app/oracle/product/12.1.0.2/db_1/network/log/listener.log
+  203  ls /u01/app/oracle/product/12.1.0.2/db_1/network/log/listener.log
+  204  sudo su - oracle
+  205  sudo su
+  206  lsnrctl
+  207  su - oracle
+  208  sudo su 
+  209  sudo su - oracle
+  210  ll
+  211  sudo su 
+  212  su - oracle
+  213  cat /etc/hosts
+  214  su - oracle
+  215  sudo su -
+  216  su - oracle
+  217  sudo su
+  218  su - oracle
+  219  cat /etc/hosts
+  220  sqlplus
+  221  su - oracle
+  222  history
+  223  histr
+  224  history >/home/ec2-user/history.log
